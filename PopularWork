@@ -1,0 +1,17 @@
+(1998) LeNet5(10) = C(1,6;5)=>a(2)C(6,16;5)=>a(2)C(16,120;5)=>fL(120,84)=>L(84,10)=>|
+  C = convolutional layer
+  a = avg pooling
+  f = flatten
+  L = fully connected layer
+  => = activation function
+  =>| = softmax
+  
+(2012) AlexNet(1000) = C=>mC=>mC=>C=>C=>afdL=>dL=>L=>|
+  C = convolutional layer
+  m = max pooling
+  a = adaptive avg pooling
+  f = flatten
+  d = dropout
+  L = fully connected layer
+  => = activation function
+  =>| = softmax
