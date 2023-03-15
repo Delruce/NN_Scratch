@@ -1,4 +1,6 @@
-(1998) LeNet5(10) = C(1,6;5)=>a(2)C(6,16;5)=>a(2)C(16,120;5)=>fL(120,84)=>L(84,10)=>|
+(1998) LeNet5(10) = in()C(1,6;5)=>a(2)C(6,16;5)=>a(2)C(16,120;5)=>fL(120,84)=>L(84,10)=>|out(10)
+  in = input image
+  out = class labels
   C = convolutional layer
   a = avg pooling
   f = flatten
@@ -6,7 +8,9 @@
   => = activation function
   =>| = softmax
   
-(2012) AlexNet(1000) = C=>mC=>mC=>C=>C=>afdL=>dL=>L=>|
+(2012) AlexNet(1000) = inC=>mC=>mC=>C=>C=>afdL=>dL=>L=>|out
+  in = input image
+  out = class labels
   C = convolutional layer
   m = max pooling
   a = adaptive avg pooling
@@ -15,3 +19,16 @@
   L = fully connected layer
   => = activation function
   =>| = softmax
+
+(2015) VGG19(1000) = in2C(64;3)2C(128;3)4C(256;3)4C(512;3)4C(512;3)L(4096)L(4096)L(1000)out
+  in = input image
+  out = class labels
+  C = convolutional layer
+  L = fully connedted layer
+  
+(2015) ResNet34(1000) = inC(64;7)3RC(64;3)4RC(128;3)6RC(256;3)3RC(512;3)aL
+  in = input image
+  out = class labels
+  RC = two convolutional layers with residue
+  a = avg pooling
+  L = fully connected layer
