@@ -27,6 +27,9 @@
   L = fully connedted layer
   
 (2015) ResNet34(1000) = inC(64;7)3RC(64;3)4RC(128;3)6RC(256;3)3RC(512;3)aLout
+
+  # [3,4,6,3]: Gamma Distribution?
+
   in = input image
   out = class labels
   RC = two convolutional layers with residue
