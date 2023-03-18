@@ -1,9 +1,12 @@
 Enable GPU support in Miniconda3:
-    1. install corresponding GPU driver
-    2. run the command
+    1. install corresponding GPU driver(s)
+    2. run the command:
                conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
        for cuda and cudnn installation
-    3. check available GPUs in Python:
+    3. install tensorflow:
+               pip install tensorflow
+    4. check available GPUs in Python:
                import tensorflow as tf
                tf.config.list_physical_devices('GPU')
     Done
+
