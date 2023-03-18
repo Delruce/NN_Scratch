@@ -9,4 +9,5 @@ Enable GPU support in Miniconda3:
                import tensorflow as tf
                tf.config.list_physical_devices('GPU')
     Done
-
+    
+Do benchmark test:
