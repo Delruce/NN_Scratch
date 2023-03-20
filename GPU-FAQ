@@ -8,6 +8,11 @@
     4. check available GPUs in Python:
                import tensorflow as tf
                tf.config.list_physical_devices('GPU')
+               
+               or
+               
+               import torch
+               torch.cuda.is_available()
     Done
     
 2.Run some benchmark test:
