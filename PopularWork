@@ -32,6 +32,10 @@
 
   in = input image
   out = class labels
-  RC = two convolutional layers with residue
+  RC = Cb=>Cb(+res)=>
+  C = convolutional layer
+  b = batch normalization
+  res = residue
+  => = activation function
   a = avg pooling
   L = fully connected layer
