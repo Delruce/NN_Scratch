@@ -8,7 +8,7 @@
   => = activation function
   =>| = softmax
   
-(2012) AlexNet(1000) = inC=>mC=>mC=>C=>C=>afdL=>dL=>L=>|out
+(2012) AlexNet(1000) = inC=>mC=>mC=>C=>C=>mafdL=>dL=>L=>|out
   in = input image
   out = class labels
   C = convolutional layer
